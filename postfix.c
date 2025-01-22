@@ -22,11 +22,6 @@ return;
 else if(isdigit(ch))
 push(ch-48);
 
-3
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
-
 else
 {
 op2=stack[top--];
