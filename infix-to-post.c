@@ -52,11 +52,6 @@ else if (ch == ')')
 while (stack[top] != '(')
 {
 postfix[k++] = pop();
-
-6
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
 if(stack[top] == '#')
 {
 printf("Not a Valid Expression\n");
@@ -65,27 +60,25 @@ exit(0);
 }
 elem = pop(); /* Removing left parenthesis */
 }
-else /* Verifying operators */
+else 
 {
 pr=precedence(ch);
 if(ch=='^')
 {
-pr++; /* If ^ operator appears more than once evaluation takes
-
-place from right to left */
+pr++; 
 
 }
 while (precedence(stack[top]) >= pr)
 {
 postfix[k++] = pop();
 }
-push(ch); /* Push the operator to stack */
+push(ch); 
 }
 }
-while (stack[top] != '#') /* Pop from stack till empty */
+while (stack[top] != '#') 
 {
 postfix[k++] = pop();
 }
-postfix[k] = '\0'; /* Make postfix as valid string */
+postfix[k] = '\0'; 
 printf("Given Infix Expression: %s\nPostfix Expression: %s\n", infix, postfix);
 }
