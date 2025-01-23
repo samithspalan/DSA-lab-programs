@@ -14,7 +14,7 @@ printf("Enter ITEM: ");
 scanf("%*c%c", &item);
 queue[rear] = item;
 printf("Item inserted: %c\n", item);
-if(front == -1) /* first element insertion into queue used for deletion */
+if(front == -1) 
 front++;
 
 }
@@ -31,11 +31,6 @@ if(front == rear)
 {
 front = rear = -1;
 }
-
-14
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
 
 else
 front = (front + 1) % SIZE;
@@ -64,7 +59,7 @@ main()
 int choice;
 while(1)
 {
-choice=0; /* to select default option of switch when non-integer */
+choice=0; 
 printf("\nCircular Queue Operations:\n");
 printf("1.Insert \n2.Delete \n3.Display \n4.Exit \n");
 printf("Enter your choice: ");
