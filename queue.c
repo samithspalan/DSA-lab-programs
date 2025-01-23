@@ -22,12 +22,6 @@ q->item[++q->rear]=n;
 int delete(queue *q)
 {
 if(q->rear<q->front)
-
-9
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
-
 printf("Queue is empty.");
 else
 return q->item[q->front++];
@@ -52,7 +46,7 @@ printf("%d\t", q->item[i]);
 }
 printf("\n");
 }
-// Display the temp array
+
 void displaySorted(int a[])
 {
 no2++;
@@ -64,7 +58,7 @@ a[i]='\0';
 }
 printf("\n");
 }
-// Insertion Sort Function
+
 void insertionSort()
 {
 for (int i = 1; a[i]!='\0'; i++)
@@ -106,7 +100,7 @@ for(i=0;i<n;i++)
 {
 scanf("%d",&a[i]);
 }
-// insert with grouping
+
 for(i=0;i<n;i++)
 {
 if(a[i]>=0 && a[i]<10)
@@ -116,12 +110,6 @@ insert(&q1, a[i]);
 else if (a[i]>=10 && a[i]<20)
 {
 insert(&q2, a[i]);
-
-11
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
-
 }
 else if (a[i]>=20 && a[i]<30)
 {
