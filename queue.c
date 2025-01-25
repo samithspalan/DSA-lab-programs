@@ -131,3 +131,83 @@ sortqueue(&q2);
 sortqueue(&q3);
 sortqueue(&q4);
 }
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// typedef struct {
+//     int *data;
+//     int front;
+//     int rear;
+//     int max;
+// } Queue;
+
+// // Function to create and initialize the queue
+// Queue* createQueue(int max) {
+//     Queue queue = (Queue)malloc(sizeof(Queue));
+//     queue->data = (int*)malloc(max * sizeof(int));
+//     queue->front = 0;
+//     queue->rear = -1;
+//     queue->max = max;
+//     return queue;
+// }
+
+// // Function to enqueue an element
+// void enqueue(Queue *queue, int value) {
+//     if ((queue->rear + 1) % queue->max == queue->front) {
+//         printf("Queue is full! Cannot enqueue %d.\n", value);
+//         return;
+//     }
+//     queue->rear = (queue->rear + 1) % queue->max;
+//     queue->data[queue->rear] = value;
+//     printf("%d enqueued to queue.\n", value);
+// }
+
+// // Function to dequeue an element
+// int dequeue(Queue *queue) {
+//     if (queue->front == (queue->rear + 1) % queue->max) {
+//         printf("Queue is empty! Cannot dequeue.\n");
+//         return -1;
+//     }
+//     int value = queue->data[queue->front];
+//     queue->front = (queue->front + 1) % queue->max;
+//     printf("%d dequeued from queue.\n", value);
+//     return value;
+// }
+
+// // Function to display the queue
+// void displayQueue(Queue *queue) {
+//     if (queue->front == (queue->rear + 1) % queue->max) {
+//         printf("Queue is empty!\n");
+//         return;
+//     }
+//     printf("Queue: ");
+//     for (int i = queue->front; i != (queue->rear + 1) % queue->max; i = (i + 1) % queue->max) {
+//         printf("%d ", queue->data[i]);
+//     }
+//     printf("\n");
+// }
+
+// // Main function to test the queue
+// int main() {
+//     int max = 4; // Set the maximum size of the queue
+//     Queue *queue = createQueue(max);
+
+//     enqueue(queue, 10);
+//     enqueue(queue, 20);
+//     enqueue(queue, 30);
+//     enqueue(queue, 40); // This will fill the queue
+
+//     displayQueue(queue);
+
+//     enqueue(queue, 50); // This will show a "Queue is full" message
+
+//     dequeue(queue);
+//     dequeue(queue);
+
+//     displayQueue(queue);
+
+//     enqueue(queue, 50); // Now we can enqueue again
+//     displayQueue(queue);
+
+//     return 0;
+// }
