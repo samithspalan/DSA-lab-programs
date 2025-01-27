@@ -28,12 +28,6 @@ scanf("%s", temp->name);
 printf("Enter Dept : ");
 scanf("%s", temp->dept);
 printf("Enter marks1 : ");
-
-21
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
-
 scanf("%f", &(temp->marks1));
 printf("Enter marks2 : ");
 scanf("%f", &(temp->marks2));
@@ -74,12 +68,6 @@ void delete_front()
 {
 NODE temp;
 if(first == NULL)
-
-22
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
-
 {
 printf("List is Empty\n");
 }
@@ -119,12 +107,6 @@ cur->rlink = temp;
 temp->llink = cur;
 }
 }
-
-23
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
-
 void delete_rear()
 {
 NODE cur;
@@ -166,12 +148,6 @@ cur = first;
 printf("The student details in doubly Linked list from beginning : \n");
 printf("USN | Name | Dept | Marks1 |Marks2 | Marks3 | Total Marks | Average |
 Ph. No \n");
-
-24
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
-
 printf("----------------------------------------------------------------------------------\n");
 while(cur != NULL)
 {
@@ -213,11 +189,6 @@ break;
 case 2: display(); break;
 case 3: insert_rear(); break;
 case 4: delete_rear(); break;
-
-25
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
 case 5: insert_front(); break;
 case 6: delete_front(); break;
 case 7: return;
