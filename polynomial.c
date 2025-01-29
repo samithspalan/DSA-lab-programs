@@ -32,11 +32,6 @@ temp->expoz = -1;
 temp->link = temp;
 return temp;
 }
-
-34
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
 void insert_rear(int coef, int ex, int ey, int ez, NODE head)
 {
 NODE temp,cur;
@@ -78,12 +73,6 @@ NODE cur;
 if(head->link == head)
 {
 printf("List is empty\n");
-
-35
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
-
 }
 else
 {
@@ -126,12 +115,6 @@ return result;
 NODE polyadd(NODE a, NODE b)
 {
 NODE c,starta,startb;
-
-36
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
-
 int sum = 0;
 starta = a;
 startb = b;
@@ -172,12 +155,6 @@ b = b->link;
 }
 /* attach the remaining terms in the polynomial to end of resultant polynomial */
 while(a != starta )
-
-37
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
-
 {
 insert_rear(a->coef,a->expox,a->expoy,a->expoz,c);
 a = a->link;
@@ -217,11 +194,5 @@ printf("Polynomial-2 is:\n");
 display(poly2);
 polysum = polyadd(poly1,poly2);
 printf("Polynomial sum is:\n");
-
-38
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
-
 display(polysum);
 }
