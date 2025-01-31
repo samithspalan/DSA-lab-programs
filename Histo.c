@@ -35,12 +35,6 @@ void displayht()
 {
 int i;
 if(elec == 0)
-
-54
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
-
 {
 printf("Hash Table is empty\n");
 return;

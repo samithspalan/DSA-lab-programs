@@ -15,12 +15,6 @@ if(a[u][i] && !visited[i])
 q[++r]=i;
 visited[i] = 1;
 printf("->%d",i);
-
-50
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
-
 }
 }
 }
@@ -60,12 +54,6 @@ if((v<1)||(v>n))
 {
 printf("Invalid node\n");
 return;
-
-51
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
-
 }
 printf("All the officers which are reachable from a given officer as a starting node using
 BFS algorithm\n %d", v);
