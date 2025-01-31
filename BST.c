@@ -31,12 +31,6 @@ else if (strcmp(newNode->name,root->name)<0)
 {
 if (root->leftChild == NULL)
 root->leftChild = newNode;
-
-41
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
-
 else
 insertBST(root->leftChild, newNode);
 
@@ -81,11 +75,6 @@ return NULL;
 if(strcmp(keyname,root->name)<0)
 root->leftChild=deleteBST(root->leftChild, keyname);
 else if(strcmp(keyname,root->name)>0)
-
-42
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
 root->rightChild=deleteBST(root->rightChild,keyname);
 else
 {
@@ -126,12 +115,6 @@ inorder(temp->rightChild);
 }
 }
 void preorder(NODE temp)
-
-43
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
-
 {
 if (temp != NULL)
 {
@@ -174,12 +157,6 @@ printf("1. Search a list for a specified name\n");
 printf("2. Insert a new name\n");
 printf("3. Deleting existing name\n");
 printf("4. Traverse the phone list\n");
-
-44
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
-
 printf("5. Exit\n");
 printf("-------------------------------------------\n");
 printf("Enter choice : ");
@@ -225,11 +202,6 @@ BST\n",keyname);
 break;
 case 4: if (root == NULL)
 {
-
-45
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
 printf("Tree is empty\n");
 }
 else
