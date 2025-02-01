@@ -74,11 +74,6 @@ case 3: display();
 break;
 case 4: return;
 default:printf("Invalid choice.\n");
-
-15
-Department of Computer Science & Engineering, SCEM, Mangaluru.
-
-CS322L5C:Data Structures Laboratory with C
 return;
 
 }
